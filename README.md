@@ -13,9 +13,9 @@ Bloco 1: Introdução - Unix & Shell
 
 ##### Bloco 2: Git & GitHub
 
-- [ ] 2-1: _O que são é para que serve?_
-- [ ] 2-2: _Entendendo os comandos_
-- [ ] 2-3: _Internet - Entendendo como ela funciona_
+- [X] 2-1: _O que são é para que serve?_
+- [X] 2-2: _Entendendo os comandos_
+- [X] 2-3: _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: Introdução - HTML & CSS
 
