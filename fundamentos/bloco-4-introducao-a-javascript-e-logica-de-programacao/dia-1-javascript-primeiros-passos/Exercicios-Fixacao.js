@@ -49,24 +49,23 @@ else {
   console.log( "Você foi reprovado" )
 } */
 
-/* Ex-5
+/* Ex-5 */
 
-let notaAprovacao = "Lista";
+/* let notaAprovacao = "Aprovado";
 
 switch (notaAprovacao) {
-  case notaAprovacao = "Aprovado":
+  case "Aprovado":
     console.log ("Parabéns você foi aprovado")
     break;
   
-  case notaAprovacao = "Lista":
+  case "Lista":
     console.log ("Infelizmente você ficou na lista de espera :/")
     break;
     
-  case notaAprovacao = "Reprovado":
+  case "Reprovado":
     console.log ("Infelizmente você foi reprovado")
     break
 
-    default:
-      console.log ("Não se aplica")   
-}
- */
+  default:
+    console.log ("Não se aplica")   
+} */
