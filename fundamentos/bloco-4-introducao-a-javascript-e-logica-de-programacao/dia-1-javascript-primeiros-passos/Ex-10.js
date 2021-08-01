@@ -9,4 +9,3 @@ if (custo < 0 || venda < 0) {
 let lucro = venda - valorTotal;
 
 console.log (lucro * 1000)
-
