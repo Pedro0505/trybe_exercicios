@@ -1,11 +1,11 @@
 let n = 5;
-let nAsteisco = "";
+let nAsterisco = "";
 let asterisco = "*"
 
 for ( let index = 0; index < n ; index += 1 ) { 
-  nAsteisco += asterisco    
+  nAsterisco += asterisco    
 }
   
 for ( let index = 0; index < n ; index += 1 ) {
-  console.log (nAsteisco)
+  console.log (nAsterisco)
 }
