@@ -1,4 +1,4 @@
-let salarioBruto = 2200;
+let salarioBruto = 3000;
 let porcentagemInss;
 let salarioBase;
 
@@ -21,25 +21,26 @@ else if (salarioBruto >= 5189.83 ) {
 let salarioIr = salarioBase
 let salarioLiquido;
 
-
 if (salarioIr <= 1903.98) {
   console.log ("Salario de " + salarioIr + " isento de imposto de renda" )
 }
 
 else if (salarioIr >= 1903.99 && salarioIr <= 2826.65) {
   salarioLiquido = salarioIr * 0.075 - 142.80; salarioLiquido = salarioIr - salarioLiquido 
+  console.log ( "Salario com os descontos do INSS e IR R$ " + salarioLiquido)
 }
 
 else if (salarioIr >= 2826.66 && salarioIr <= 3751.05) {
   salarioLiquido = salarioIr * 0.15 - 354.80; salarioLiquido = salarioIr - salarioLiquido
+  console.log ( "Salario com os descontos do INSS e IR R$ " + salarioLiquido)
 }
 
 else if (salarioIr >= 3751.06 && salarioIr <= 4664.68) {
   salarioLiquido = salarioIr * 0.225 - 636.13; salarioLiquido = salarioIr - salarioLiquido
+  console.log ( "Salario com os descontos do INSS e IR R$ " + salarioLiquido)
 }
 
 else {
   salarioLiquido = salarioIr * 0.275 - 869.36; salarioLiquido = salarioIr - salarioLiquido 
+  console.log ( "Salario com os descontos do INSS e IR R$ " + salarioLiquido)
 }
-
-console.log ( "Salario com os descontos do INSS e IR R$ " + salarioLiquido)

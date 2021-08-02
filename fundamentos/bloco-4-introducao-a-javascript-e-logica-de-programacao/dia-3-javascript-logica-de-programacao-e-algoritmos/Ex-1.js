@@ -1,8 +1,11 @@
 let n = 5;
-let asteriscoN = n; 
-let asterisco = "*";
+let nAsteisco = "";
+let asterisco = "*"
 
-for (index = 1; index <= asteriscoN; index += 1) {
-  index = asterisco
-  console.log (index)    
+for ( let index = 0; index < n ; index += 1 ) { 
+  nAsteisco += asterisco    
+}
+  
+for ( let index = 0; index < n ; index += 1 ) {
+  console.log (nAsteisco)
 }
