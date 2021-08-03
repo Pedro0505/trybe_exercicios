@@ -99,3 +99,43 @@ for (let key in names) {
 for ( let key in car ) {
   console.log (key , ":" + car[key]);
 } */
+
+/* Ex-8 */
+
+/* function soma (a, b) {
+  return a + b;
+
+}
+let sum = soma (10,10)
+
+console.log (sum) */
+
+/* Ex-9*/
+
+/* function subtracao (a, b) {
+  return a - b;
+
+}
+let subtraction = subtracao (20,10)
+
+console.log (subtraction) */
+
+/* Ex-10 */
+
+/* function multiplicacao (a, b) {
+  return a * b;
+
+}
+let multiplication = multiplicacao (20,10)
+
+console.log (multiplication) */
+
+/* Ex-11 */
+
+/* function divisao (a, b) {
+  return a / b;
+
+}
+let division = divisao (20,10)
+
+console.log (division) */
