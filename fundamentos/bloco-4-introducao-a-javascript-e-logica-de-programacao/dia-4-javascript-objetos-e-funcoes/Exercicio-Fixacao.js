@@ -11,9 +11,9 @@ medals : {
   } 
 }; */
 
-/* Ex-2
+Ex-2
 
-let player = {
+/* let player = {
 
   name : 'Marta',
   lastName : 'Silva', 
