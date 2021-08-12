@@ -73,7 +73,10 @@
   capsLock()
   
   function show () {
-
+    let showAll = document.getElementsByTagName('p')
+    for (let i = 0; i < showAll.length; i += 1) {
+      console.log(showAll[i].innerText)
+    }
   }  
   show ()
   
