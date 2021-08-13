@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      
+      // Passo 1
+      let acessBody = document.querySelector('body')
+      let createElement = document.createElement('h1')
+      acessBody.appendChild(createElement)
+      createElement.innerText = "Exercício 5.2 - JavaScript DOM"
+
+      // Passo 2
+      let creatMain = document.createElement('main')
+      creatMain.className = 'main-content'
+      acessBody.appendChild(creatMain)
+      
+      // Passo 3
+      let acessMain = document.querySelector('main')
+      creatSection = document.createElement('section')
+      creatSection.className = 'center-content'
+      acessMain.appendChild(creatSection)
+      
+      // Passo 4
+      let acessSection = document.querySelector('section')
+      let createP = document.createElement('p')
+      acessSection.appendChild(createP)
+      createP.innerText = 'Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum'
+      
+      // Passo 5
+      let createSection2 = document.createElement('section')
+      createSection2.className = 'left-content'
+      acessMain.appendChild(createSection2)
+      
+      // Passo 6
+      let createSection3 = document.createElement('section')
+      createSection3.className = 'right-content'
+      acessMain.appendChild(createSection3)
+      
+      // Passo 7
+      let createImg = document.createElement('img')
+      createImg.className = 'small-image'
+      createImg.src = 'https://picsum.photos/200'
+      createSection2.appendChild(createImg)
+
+      // Passo 8
+      let arrayNumber = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+      for (let i = 0; i < arrayNumber.length; i += 1){ 
+        let createUl = document.createElement('ul')
+        createUl.innerText = arrayNumber[i]
+        createSection3.appendChild(createUl)
+      }
+      // Passo 9
+      for (let i =1; i <= 3; i += 1) {
+        let createH3 = document.createElement('h3')
+        acessMain.appendChild(createH3)
+      }
+
+      // Passo 10
+      createElement.classList.add('title')
+
+      // Passo 11
+      let acessH3 = document.querySelectorAll('h3')
+      
+      for (let i = 0; i < acessH3.length; i+= 1 ) {
+        acessH3[i].classList.add('description')
+      }
+
+      // Passo 12
+      let removeSection = document.getElementsByClassName('left-content')[0]
+      acessMain.removeChild(removeSection)
+
+      //Passo 13
+      let styleRigth = document.getElementsByClassName('right-content')[0]
+      styleRigth.style.marginRight='auto';
+
+      //Passo 14
+      let backColor = document.getElementsByTagName('main')[0]
+      backColor.style.backgroundColor = 'green'
+
+      //Passo 15
+      let removeUl = document.getElementsByClassName('right-content')[0]
+      removeUl.lastChild.remove()
+      removeUl.lastChild.remove()
+
+</script>
+  </body>
+</html>
