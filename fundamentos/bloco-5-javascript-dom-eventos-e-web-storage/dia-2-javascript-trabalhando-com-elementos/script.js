@@ -1,4 +1,4 @@
-/* console.log(document.getElementById('elementoOndeVoceEsta'))
+console.log(document.getElementById('elementoOndeVoceEsta'))
 
 console.log(document.getElementById('elementoOndeVoceEsta').parentElement.style.color = "red") 
 
@@ -14,11 +14,11 @@ console.log(document.getElementById('elementoOndeVoceEsta').nextSibling)
 
 console.log(document.getElementById('elementoOndeVoceEsta').nextElementSibling)
 
-console.log(document.getElementById('pai').lastElementChild.previousElementSibling) */
+console.log(document.getElementById('pai').lastElementChild.previousElementSibling)
 
 // Exercico da segunda parte
 
-/* let acessDad = document.getElementById('pai')
+let acessDad = document.getElementById('pai')
 let creationId =  document.createElement('section')
 creationId.id = 'irmaoelementoOndeVoceEsta'
 acessDad.appendChild(creationId)
@@ -33,7 +33,7 @@ let createGrandSon = document.createElement('section')
 createGrandSon.id = 'filhoDoPrimeiroFilhoDoFilho'
 acessGranSon.appendChild(createGrandSon)
 
-document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling */
+document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling
 
 // Exercico da terceira parte
 
@@ -47,4 +47,3 @@ dad.removeChild(son)
 dad.removeChild(son1)
 dad.removeChild(son2)
 son3.remove()
-
