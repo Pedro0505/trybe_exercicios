@@ -36,16 +36,18 @@ h1 {
 }
 
 .container li:nth-of-type(1) {
-  background-color: #2fc18c;
+  /* background-color: #2fc18c; */
   color: #333;
 }
 
 .container li:nth-of-type(2) {
-  background-color: #006dfb;
+ /*  background-color: #006dfb; */
+ color: #333;
 }
 
 .container li:nth-of-type(3) {
-  background-color: #41197f;
+  /* background-color: #41197f; */
+  color: #333;
 }
 
 input {
@@ -66,5 +68,6 @@ input:focus {
 }
 
 .tech {
-  transform: translateY(-20px);
+  /* transform: translateY(-20px); */
+  background-color: red;
 }
