@@ -1,0 +1,35 @@
+.login  {
+  margin-left: 10%;
+  margin-bottom: 15px;
+}
+
+.infoCity {
+  margin-left: 10%;
+  margin-bottom: 15px;
+}
+
+.infoResidence {
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+
+.field {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#curriculum {
+  resize: none;
+  
+}
+
+.resumeCurriculum {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+/* #office {
+
+}
+ */
