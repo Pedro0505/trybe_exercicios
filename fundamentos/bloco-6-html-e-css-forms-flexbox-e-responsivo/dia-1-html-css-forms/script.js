@@ -10,4 +10,22 @@ for (let i = 0; i < arrayTextoEstado.length; i += 1) {
   accessIdState.appendChild(createOption)
 }
 
-
+function button(event) {
+  event.preventDefault()
+   const valueDate = document.getElementById('date').value.split('/', 3)
+  if (valueDate == '') {
+    alert('Data vazia')
+  }
+    else if (valueDate[0] > 31 || valueDate[0] < 0) {
+      alert('Dia Inválida')
+    }
+    else if (valueDate[1] > 12 || valueDate[1] < 0) {
+      alert('Mês Inválido')
+    }
+    else if (valueDate[2] < 0){ 
+    alert('Ano Inválido')
+    }
+    else ('Data Valida') 
+  }
+const accessButton = document.querySelector('#submit')
+accessButton.addEventListener('click', button)
