@@ -17,7 +17,7 @@ function button(event) {
     alert('Data vazia')
   }
     else if (valueDate[0] > 31 || valueDate[0] < 0) {
-      alert('Dia Inválida')
+      alert('Dia Inválido')
     }
     else if (valueDate[1] > 12 || valueDate[1] < 0) {
       alert('Mês Inválido')
