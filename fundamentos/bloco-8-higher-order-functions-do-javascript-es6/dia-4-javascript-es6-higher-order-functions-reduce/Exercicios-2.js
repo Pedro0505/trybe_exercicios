@@ -7,6 +7,6 @@ const EvenNumber = numbers.filter((element) => {
 
 const sumEven = EvenNumber.reduce((acc, element) => {
   return acc + element
-}) 
+});
 
 console.log(sumEven)
