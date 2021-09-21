@@ -1,6 +1,4 @@
 const assert = require('assert');
-const { log } = require('console');
-const { copyFileSync } = require('fs');
 
 const books = [
   {
