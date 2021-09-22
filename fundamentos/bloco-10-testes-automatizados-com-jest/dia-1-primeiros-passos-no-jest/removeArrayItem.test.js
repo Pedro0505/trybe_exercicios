@@ -13,11 +13,12 @@ describe('Teste função myRemove', () => {
   })
   it('Teste de imutabilidade do array', () => {
     const myArray = [1, 2, 3, 4, 5];
+    
     const teste = () => {
     myRemove(myArray, 1);
     return myArray;
     }
 
-    expect(teste()).toEqual(myArray);
+    expect(teste()).toEqual([1, 2, 3, 4, 5]);
   })
 })
