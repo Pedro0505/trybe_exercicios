@@ -7,6 +7,4 @@ function encode(string) {
   return result;
 }
 
-console.log(encode('aeiou'))
-
 module.exports = encode;

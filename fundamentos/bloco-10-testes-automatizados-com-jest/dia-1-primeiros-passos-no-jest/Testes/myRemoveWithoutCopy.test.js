@@ -1,4 +1,4 @@
-const myRemoveWithoutCopy = require('./myRemoveWithoutCopy');
+const myRemoveWithoutCopy = require('../Application/myRemoveWithoutCopy');
 
 describe('Teste função myRemoveWithoutCopy', () => {
   it('Ao receber dois parametros um array de números e um número a função retorna o array sem esse número', () => {

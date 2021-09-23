@@ -1,4 +1,4 @@
-const sum = require('./sum')
+const sum = require('../Application/sum')
 
 describe('Teste função Sum', () => {
   it('Teste de soma de números positivos', () => {

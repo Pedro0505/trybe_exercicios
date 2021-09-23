@@ -1,4 +1,4 @@
-const encode = require('./encode');
+const encode = require('../Application/encode');
 
 describe('Teste função encode', () => {
   it('Ao passar uma string retorna ela codificada', () => {

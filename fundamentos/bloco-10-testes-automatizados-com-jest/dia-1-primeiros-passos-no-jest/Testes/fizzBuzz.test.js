@@ -1,4 +1,4 @@
-const myFizzBuzz = require('./fizzBuzz');
+const myFizzBuzz = require('../Application/fizzBuzz');
 
 describe('Teste função fizzBuzz', () => {
   it('Ao chamar um número divisível por 3 e 5 retorna fizzBuzz', () => {

@@ -1,4 +1,4 @@
-const {obj1, obj2, obj3} = require('./compareObj');
+const {obj1, obj2, obj3} = require('../Application/compareObj');
 
 describe('Comparar os objetos', () => {
   it('Ao chamar um número divisível por 3 e 5 retorna fizzBuzz', () => {

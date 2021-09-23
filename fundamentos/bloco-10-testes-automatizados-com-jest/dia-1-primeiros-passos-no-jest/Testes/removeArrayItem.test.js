@@ -1,4 +1,4 @@
-const myRemove = require('./removeArrayItem')
+const myRemove = require('../Application/removeArrayItem')
 
 describe('Teste função myRemove', () => {
   it('Ao receber dois parametros um array de números e um número a função retorna o array sem esse número', () => {
