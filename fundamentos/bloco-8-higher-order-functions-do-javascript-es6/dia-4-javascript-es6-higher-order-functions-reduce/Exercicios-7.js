@@ -77,7 +77,6 @@ const books = [
 function longestNamedBook() {
   return books.reduce((acc, cur) => {
     if (acc.name.replace(/\s/g, '').length > cur.name.replace(/\s/g, '').length) {
-      console.log(`${acc.name} || ${cur.name}`)
       return acc
     }
     return cur
