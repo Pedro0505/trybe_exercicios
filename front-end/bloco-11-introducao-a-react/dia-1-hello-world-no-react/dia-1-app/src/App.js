@@ -1,18 +1,19 @@
 import React from 'react';
 import './App.css';
-
-const Task = (value) => {
-  return (
-    <li key={value}>{value}</li>
-  );
-}
-
-const tarefas = ['Acordar', 'Escovar os dentes', 'Estudar'];
+import Header from './Header';
+import Content from './Content';
+import Footer from './Footer';
+import Tascks from './Tasck';
 
 class App extends React.Component {
   render() {
     return (
-      <ul>{ tarefas.map(tarefa => Task(tarefa)) }</ul>
+      <div>
+      <Header />
+      <Tascks/>
+      <Content />
+      <Footer />
+      </div>
     );
   }
 }
