@@ -4,12 +4,12 @@ const tarefas = ['Acordar', 'Escovar os dentes', 'Estudar'];
 
 class Tascks extends React.Component {
   render() {
-    return(
-      <div> 
-        {tarefas.map((e) =>
-          <p>{e}</p>
-        )}
-      </div>
+    return( 
+    <div>
+      {
+        tarefas.map((e, i) => <ul key={i}> <li>{e}</li> </ul>)
+      }
+    </div>
     )
   }
 }
