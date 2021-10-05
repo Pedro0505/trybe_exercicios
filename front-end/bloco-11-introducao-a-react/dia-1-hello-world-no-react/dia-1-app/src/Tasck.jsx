@@ -5,11 +5,11 @@ const tarefas = ['Acordar', 'Escovar os dentes', 'Estudar'];
 class Tascks extends React.Component {
   render() {
     return(
-      <ul> 
+      <div> 
         {tarefas.map((e) =>
-          <li>{e}</li>
+          <p>{e}</p>
         )}
-      </ul>
+      </div>
     )
   }
 }
