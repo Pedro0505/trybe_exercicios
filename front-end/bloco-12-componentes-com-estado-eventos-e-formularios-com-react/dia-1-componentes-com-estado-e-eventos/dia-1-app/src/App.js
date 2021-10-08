@@ -1,14 +1,15 @@
-import { Component } from "react";
-import ChangeColor from "./Exercicio Fixação/isEven";
+import React from 'react';
+import './Ex-Pokedex/App.css';
+import pokemons from './Ex-Pokedex/data';
+import Pokedex from './Ex-Pokedex/Pokedex';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <ChangeColor />
+function App() {
+  return (
+    <div className="App">
+      <h1> Pokedex </h1>
+      <Pokedex pokemons={pokemons} />
     </div>
-    )
-  }
+  );
 }
 
 export default App;
