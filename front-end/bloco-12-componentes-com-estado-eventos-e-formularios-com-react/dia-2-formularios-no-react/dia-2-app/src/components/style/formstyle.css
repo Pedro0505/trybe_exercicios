@@ -1,0 +1,12 @@
+#input-text {
+  text-transform: uppercase;
+}
+
+#fild {
+  display: flex;
+  flex-direction: column;
+}
+
+#fild label {
+  padding: 10px;
+}
