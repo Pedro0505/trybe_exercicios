@@ -18,16 +18,24 @@ class Form extends Component {
 
   handleChange = ({ target }) => {
     const { name } = target;
-  
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+
     this.setState({
-      [name]: target.value,
+      [name]: value,
     });
   }
 
-  Teste = (e) => {
+  removeEspecialChar = (e) => {
     const exp = /[0-9a-zA-Z ]/gi
     if(!exp.test(e.key))
     e.preventDefault();
+  }
+
+  Teste = ({ target }) => {
+    const exp = /^\d/gi
+    if(exp.test(target.value)) {
+      target.value = ''
+    }
   }
 
   render() {
@@ -65,7 +73,7 @@ class Form extends Component {
               name="address"
               id="input-address"
               onChange={ this.handleChange }
-              onKeyPress={ this.Teste }
+              onKeyPress={ this.removeEspecialChar }
             />
           </label>
           <label htmlFor="input-city" required > Cidade:
@@ -74,6 +82,7 @@ class Form extends Component {
               name="city" 
               id="input-city"
               onChange={ this.handleChange }
+              onBlur= { this.Teste }
             />
           </label>
           <label htmlFor="option-state" required > Selecione seu estado
