@@ -1,15 +1,7 @@
 function verificaPalindrome (string) { 
 
-  let resultado = string.split("").reverse().join("")
+  const result = string.split("").reverse().join("")
+  return result === string ? false : true
+}
   
-  if (string === resultado ) {
-    return("True")
-  }
-  else {
-    return ("False") 
-    }
-  }
-  
-  let resultadoFinal = verificaPalindrome("Srara")
-  
-  console.log (resultadoFinal)
+console.log(verificaPalindrome("Srara"))

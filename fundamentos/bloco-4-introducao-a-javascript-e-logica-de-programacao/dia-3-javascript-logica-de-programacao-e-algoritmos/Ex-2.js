@@ -6,5 +6,4 @@ for ( let index = 0; index < n ; index += 1 ) {
   nAsterisco += asterisco
 
 console.log (nAsterisco)
-}  
- 
+}
