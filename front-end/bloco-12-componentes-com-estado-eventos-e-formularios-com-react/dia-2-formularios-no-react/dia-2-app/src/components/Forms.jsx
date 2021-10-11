@@ -13,6 +13,7 @@ class Form extends Component {
       address: '',
       city: '',
       states: data[0],
+      residence: '',
     }
   }
 
@@ -31,64 +32,100 @@ class Form extends Component {
     e.preventDefault();
   }
 
-  Teste = ({ target }) => {
+  correctInput = ({ target }) => {
     const exp = /^\d/gi
     if(exp.test(target.value)) {
       target.value = ''
     }
   }
 
+  buttonSubmit = (e) => {
+    e.preventDefault();
+  }
+
   render() {
     return (
-      <form>
+      <form onSubmit={ this.buttonSubmit }>
         <fieldset id="fild">
-          <label htmlFor="input-name" required > Coloque seu nome aqui:
+          <label htmlFor="input-name"> Coloque seu nome aqui:
             <input
               type="text" 
               name="name" 
               id="input-name" 
-              maxLength="40" 
-              onChange={ this.handleChange } 
+              maxLength="40"
+              required
+              onChange={ this.handleChange }
+              // onMouseEnter={() => { alert('Preencha com cuidado esta informação.')}}
             />
           </label>
-          <label htmlFor="input-email" required > Email:
+          <label htmlFor="input-email"> Email:
             <input
               type="text" 
               name="email" 
               id="input-email"
+              required
               onChange={ this.handleChange } 
             />
           </label>
-          <label htmlFor="input-cpf" required > CPF:
+          <label htmlFor="input-cpf"> CPF:
             <input
               type="text" 
               name="cpf" 
               id="input-cpf"
               onChange={ this.handleChange }
+              required
             />
           </label>
-          <label htmlFor="input-address" required > Endereço:
+          <label htmlFor="input-address" > Endereço:
             <input
               type="text"
               name="address"
               id="input-address"
               onChange={ this.handleChange }
               onKeyPress={ this.removeEspecialChar }
+              required
             />
           </label>
-          <label htmlFor="input-city" required > Cidade:
+          <label htmlFor="input-city" > Cidade:
             <input
               type="text" 
               name="city" 
               id="input-city"
               onChange={ this.handleChange }
-              onBlur= { this.Teste }
+              onBlur= { this.correctInput }
+              required
             />
           </label>
-          <label htmlFor="option-state" required > Selecione seu estado
-            <Selected statesData={ data } funcHandle={ this.handleChange } keyState={ this.state.states } />
+          <label htmlFor="option-state" > Selecione seu estado
+            <Selected 
+              statesData={ data } 
+              funcHandle={ this.handleChange }
+              keyState={ this.state.states }
+              required
+            />
+          </label>
+          <label htmlFor="house" >Você mora em:
+            <input
+              type="radio"
+              name="residence" 
+              id="house"
+              value="House"
+              onClick={ this.handleChange }
+              required
+            /> Casa
+          </label>
+          <label htmlFor="apartament">
+            <input
+              type="radio"
+              name="residence"
+              id="apartament"
+              value="Apartament"
+              onClick={ this.handleChange }
+              required
+            /> Apartameto
           </label>
         </fieldset>
+        <button type='submit'> Enviar </button>
       </form>
     )
   }
