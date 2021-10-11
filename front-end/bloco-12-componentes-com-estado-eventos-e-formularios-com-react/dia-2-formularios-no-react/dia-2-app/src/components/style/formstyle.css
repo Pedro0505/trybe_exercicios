@@ -5,8 +5,11 @@
 #fild {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 #fild label {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
 }
