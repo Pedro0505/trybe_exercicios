@@ -22,7 +22,6 @@ const NEXT_COLOR = 'NEXT_COLOR';
 const RANDOM_COLOR = 'RANDOM_COLOR';
 
 const reducer = (state = ESTADO_INICIAL, action) => {
-  console.log(state)
   switch (action.type) {
     case PREVIUS_COLOR:
       return {
@@ -59,7 +58,7 @@ RandomBtn.addEventListener('click', () => {
 const store = Redux.createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 store.subscribe(() => {
-  const state = store.getState()
+  const state = store.getState();
   document.querySelector('#value').innerHTML = state.colors[state.index];
   document.getElementById('container').style.backgroundColor = state.colors[state.index];
 })

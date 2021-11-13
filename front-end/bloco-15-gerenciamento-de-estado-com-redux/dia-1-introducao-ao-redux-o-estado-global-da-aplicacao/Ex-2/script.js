@@ -68,4 +68,3 @@ store.subscribe(() => {
   SECOND_TEXT_NAME.innerHTML = state.meuSegundoReducer.nome
   SECOND_TEXT_LAST_NAME.innerHTML = state.meuSegundoReducer.sobrenome
 })
-
